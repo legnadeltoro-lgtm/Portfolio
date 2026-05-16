@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Legna del Toro | Portfolio</title>
+
+    <meta name="description" content="Portfolio profesional de Legna del Toro, diseñadora y desarrolladora frontend. Conoce mis proyectos y contáctame.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Legna del Toro | Portfolio">
+    <meta property="og:description" content="Portfolio profesional de Legna del Toro, diseñadora y desarrolladora frontend.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://legnadeltoro.com">
+    <meta property="og:image" content="https://legnadeltoro.com/img/og-image.jpg">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto" class="btn-contacto">Contact me</a>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- SECCIÓN INICIO -->
+        <section id="inicio" aria-label="Presentación">
+            <div class="contenido-inicio">
+
+                <div class="texto-inicio">
+                    <h1>Legna del Toro</h1>
+
+                    <p>
+                        Desarrolladora Frontend apasionada por crear
+                        experiencias digitales sostenibles y accesibles.
+                        Transformo ideas en interfaces limpias y funcionales.
+                    </p>
+                </div>
+
+                <div
+                    class="foto-perfil"
+                    aria-label="Foto de Legna del Toro">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN PROYECTOS -->
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+
+            <div class="contenedor-proyectos">
+
+                <article class="tarjeta-proyecto">
+                    <div class="icono-proyecto" aria-hidden="true">🌿</div>
+
+                    <h3>EcoTrack</h3>
+
+                    <p>
+                        Plataforma para monitorear hábitos sostenibles y reducir
+                        el impacto ambiental diario.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="enlace-proyecto"
+                        rel="noopener noreferrer">
+                        Ver proyecto &rarr;
+                    </a>
+                </article>
+
+                <article class="tarjeta-proyecto">
+                    <div class="icono-proyecto" aria-hidden="true">🎨</div>
+
+                    <h3>Arte Minimal</h3>
+
+                    <p>
+                        Galería digital moderna enfocada en experiencias visuales
+                        limpias y navegación intuitiva.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="enlace-proyecto"
+                        rel="noopener noreferrer">
+                        Ver proyecto &rarr;
+                    </a>
+                </article>
+
+                <article class="tarjeta-proyecto">
+                    <div class="icono-proyecto" aria-hidden="true">☁️</div>
+
+                    <h3>CloudBites</h3>
+
+                    <p>
+                        Landing page para una startup gastronómica con enfoque
+                        responsive y accesibilidad web.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="enlace-proyecto"
+                        rel="noopener noreferrer">
+                        Ver proyecto &rarr;
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Información personal</legend>
+
+                    <label for="nombre">Nombre</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required>
+
+                    <label for="apellidos">Apellidos</label>
+                    <input
+                        type="text"
+                        id="apellidos"
+                        name="apellidos"
+                        required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        required>
+
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        pattern="[a-zA-Z0-9._%+\-]+@gmail\.com$"
+                        placeholder="tu@gmail.com">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tipo de contacto</legend>
+
+                    <div class="radio-group">
+
+                        <div class="radio-item">
+                            <input
+                                type="radio"
+                                id="empresa"
+                                name="tipo"
+                                value="empresa"
+                                required>
+
+                            <label for="empresa">Empresa</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input
+                                type="radio"
+                                id="emprendedor"
+                                name="tipo"
+                                value="emprendedor">
+
+                            <label for="emprendedor">Emprendedor</label>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <label for="mensaje">Mensaje</label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Cuéntame tu proyecto..."
+                    required></textarea>
+
+                <div class="botones-formulario">
+                    <button type="submit" class="btn-enviar">
+                        Enviar mensaje
+                    </button>
+
+                    <button type="reset" class="btn-limpiar">
+                        Limpiar formulario
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-links">
+
+            <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=legnadeltoro@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer">
+                <span aria-hidden="true">📧</span>
+                legnadeltoro@gmail.com
+            </a>
+
+            <a
+                href="https://wa.me/5355335781"
+                target="_blank"
+                rel="noopener noreferrer">
+                <span aria-hidden="true">📞</span>
+                +53 55 33 57 81
+            </a>
+
+        </div>
+
+        <p>&copy; 2025 Legna del Toro</p>
+
+    </footer>
+
+</body>
+</html>
